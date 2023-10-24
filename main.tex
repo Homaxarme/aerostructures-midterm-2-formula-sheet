@@ -18,6 +18,12 @@ where
     \item $K,$ Effective Length Factor,
     \item $L,$ Column Length.
 \end{itemize}
+\subsection{Approximation Method for Beam Moment}
+\begin{equation}
+    M = \cfrac{M_o}{1 - \cfrac{P}{P_{cr}}}
+\end{equation}
+
+
 \section{Crippling Stress}
 \subsection{Gerard Method}
 The Gerard method has two equations, those that apply to Channel and Zee sections, and those that apply to all other sections.
@@ -45,7 +51,7 @@ Once you have calculated the individual stresses, calculate the total force and 
 \begin{equation}\label{eqn:average-stress}
     \sigma_{avg} = \frac{\sum\sigma_i A_i}{\sum A_i}
 \end{equation}
-For aluminum sections, we can use the following equations to calculate $\sigma$, one for free at one end (Equation \ref{eqn:simply-free}) and simply supported at the other (Equation \ref{eqn:simply-simply}), and another for simply supported at both ends.
+For aluminum sections, we can use the following equations to calculate $\sigma$, one for free at one end and simply supported at the other (Equation~\ref{eqn:simply-free}), and another for simply supported at both ends (Equation~\ref{eqn:simply-simply}).
 \begin{equation}\label{eqn:simply-free}
    \sigma = 0.452E\left(\frac{t}{b}\right) ^ 2
 \end{equation}
