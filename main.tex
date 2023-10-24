@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage[margin=1in]{geometry}
+\title{Aerostructures Exam II Formula Sheet}
+\author{Gabriel Duany Izaguirre}
+\date{}
+
+\begin{document}
+\maketitle
+\section{Euler Column Bending}
+\begin{equation}
+P_{cr} = \frac{\pi ^ 2 EI}{KL^2}
+\end{equation}
+where
+\begin{itemize}
+    \item $P_{cr},$ Euler Critical Load,
+    \item $E,$ Modulus of Elasticity,
+    \item $K,$ Effective Length Factor,
+    \item $L,$ Column Length.
+\end{itemize}
+\section{Crippling Stress}
+\subsection{Gerard Method}
+The Gerard method has two equations, those that apply to Channel and Zee sections, and those that apply to all other sections.
+For all other sections, you must determine the number of flanges and cuts, the $g$ value.
+Equation~\ref{eqn:gerard-zee-channel} is used for Channel and Zee sections while Equation~\ref{eqn:gerard-others}
+\begin{equation}\label{eqn:gerard-zee-channel}
+    F_{cc} = B\left(\frac{1}{\frac{A}{t^2}}\right)^m\sqrt[3]{E^mF_{cy}^{(3-m)}}
+\end{equation}
+where $B = 4.05$ and $m=0.82$.
+
+\begin{equation}\label{eqn:gerard-others}
+   F_{cc} = B\left(\frac{1}{\frac{A}{gt^2}}\right)^m\sqrt{E^mF_{cy}^{(2-m)}}
+\end{equation}
+where $B = 0.58$ and $ m = 0.8$
+
+\subsection{Bruhn Method}
+
+\end{document}
