@@ -42,6 +42,7 @@ where $B = 0.58$ and $ m = 0.8$
 
 \subsection{Bruhn Method}
 Divide the shape into different sections and calculate the individual stresses $\sigma$ using Equation~\ref{eqn:bruhn}.
+Use centerline dimensions.
 If you get a value above the yield strength of the material $\sigma_y$, the allowable stress is then the yield stress.
 $K_c$ is the buckling coefficient, which will have to be obtained from a graph.
 Once you have calculated the individual stresses, calculate the total force and divide by the total area to get the average stress (Equation~\ref{eqn:average-stress})
@@ -78,7 +79,7 @@ The stress that can be taken before inter-rivet buckling occurs, then you can us
 \end{equation}
 To calculate inter-rivet pitch, use Equation~\ref{eqn:inter-rivet-pitch}
 Using graphs, we can calculate the inter-rivet buckling stress by looking at $\frac{s}{t}$ and finding th stress that matches.
-That graph assumes that $c=4$, but if it is not 4, then you ned to use a correction factor $\sqrt{\frac{c}{4}}$.
+That graph assumes that $c=4$, but if it is not 4, then you need to use a correction factor $\sqrt{\frac{c}{5}}$.
 \begin{equation}\label{eqn:inter-rivet-pitch}
    s = t\sqrt{\frac{0.9cE}{F_{ir}}} 
 \end{equation}
