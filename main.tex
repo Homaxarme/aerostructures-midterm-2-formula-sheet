@@ -83,5 +83,25 @@ That graph assumes that $c=4$, but if it is not 4, then you need to use a correc
 \begin{equation}\label{eqn:inter-rivet-pitch}
    s = t\sqrt{\frac{0.9cE}{F_{ir}}} 
 \end{equation}
+\section{Torsion in thin-walled closed sections}
+For any section, the angle of twist is given by the following equation:
+\begin{equation}
+\theta = \frac{TL}{JG}
+\end{equation}
+Where $J$ is the torsional constant, the polar moment of inertia for a circular cross-section.
+For noncircular cross-sections, then $J$ can be calculated as follows:
+
+\begin{equation}
+    J = \frac{4A^2}{\sum_{i=1}^n\frac{b_i}{t_i}}
+\end{equation}
+
+The shear flow and torsional shear stress are:
+\begin{equation}
+    q = \frac{T}{2A}
+\end{equation}
+\begin{equation}
+    f_{ts} = \frac{T}{2At}
+\end{equation}
+
 
 \end{document}
