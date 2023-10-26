@@ -1,7 +1,8 @@
 \documentclass{article}
 \usepackage{mathtools}
+\usepackage[utf8x]{inputenc}
 \usepackage[margin=1in]{geometry}
-\title{Aerostructures Exam II Formula Sheet}
+\title{Aerostructures  Exam Zwei Formula Sheet}
 \author{}
 \date{}
 \begin{document}
@@ -75,7 +76,7 @@ The skin between the rivets will buckle and to prevent that, you should space th
 If you know the flexural instability of the object, $F_c$, then you can set that to the inter-rivet buckling stress, because you are screwed if you exceed that value.
 The stress that can be taken before inter-rivet buckling occurs, then you can use Equation~\ref{eqn:inter-rivet-stress}
 \begin{equation}\label{eqn:inter-rivet-stress}
-    F_ir = 0.9cE\left(\frac{t}{s}\right) ^ 2
+    F_{ir} = 0.9cE\left(\frac{t}{s}\right) ^ 2
 \end{equation}
 To calculate inter-rivet pitch, use Equation~\ref{eqn:inter-rivet-pitch}
 Using graphs, we can calculate the inter-rivet buckling stress by looking at $\frac{s}{t}$ and finding th stress that matches.
@@ -102,6 +103,18 @@ The shear flow and torsional shear stress are:
 \begin{equation}
     f_{ts} = \frac{T}{2At}
 \end{equation}
-
+\section{Tapered Beams}
+You can make a table for this that lists: $x$, $h$, $\frac{h_0}{h}$, $V_w = V(\frac{h_0}{h})$, $q =  \frac{V_w}{h}$.
+To get the forces taken by the caps, you realize that the force acting vertically on the web is going to create a moment that will have to be counteracted.
+This force is horizontal and is labeled as $P$.
+Do a moment balance to determine the magnitude of B.
+You can then use trigonometry to determine how much force the caps are taking.
+There are also two equations given by the book:
+\begin{equation}
+    V_c = P(\tan\alpha_1 + \tan\alpha_2)
+\end{equation}
+\begin{equation}
+    V_c = P(-\tan\alpha_1 + \tan\alpha_2)
+\end{equation}
 
 \end{document}
